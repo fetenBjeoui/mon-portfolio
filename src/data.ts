@@ -1,6 +1,7 @@
 export type Domain = "admin" | "import" | "web";
 export type Filter = "all" | Domain;
 
+
 export const profile = {
   name: "Feten Bejaoui",
   firstName: "Feten",
@@ -222,6 +223,25 @@ export type ProjectItem = {
 };
 
 export const projects: ProjectItem[] = [
+  {
+  id: "suivi-importations",
+  title: "Application de suivi des opérations d’importation",
+  period: "2026",
+  place: "Projet personnel",
+  description:
+    "Conception d’une application web pour suivre les dossiers d’importation, de la commande jusqu’à l’arrivée des marchandises. Elle centralise les échéances, les formalités et l’avancement des documents.",
+  points: [
+    "Création et suivi des dossiers : fournisseur, pays d’origine, marchandise et statut.",
+    "Suivi des transports, des dates de départ et d’arrivée prévues (ETD/ETA) et des retards.",
+    "Contrôle des factures, connaissements, certificats d’origine, autorisations et assurances.",
+    "Recherche, filtres, alertes visuelles et export des dossiers au format CSV.",
+    "Enregistrement des dossiers dans PostgreSQL avec Drizzle ORM.",
+  ],
+  tech: ["Next.js", "React", "TypeScript", "PostgreSQL", "Drizzle ORM", "Tailwind CSS"],
+  domain: "web",
+  image: "web",
+},
+  
   {
     id: "labidi",
     title: "Site web — STE Labidi Viandes",
